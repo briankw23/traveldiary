@@ -3,14 +3,14 @@ const printToDom = (domString, divID) => {
 };
 
 let place = [
-    {location:"New York, NY", image:"<img src='newyork.jpg'>",description:"This place is awesome!"},
-    {location:"Chicago, IL",image:"<img src='chicago.jpg'>",description:"This place is awesome!"},
-    {location:"Portland, Oregon",image:"<img src='portland.jpg'>",description:"This place is awesome!"},
-    {location:"Banff, Alberta",image:"<img src='banff.jpg'>",description:"This place is awesome!"},
-    {location:"Seattle, Washington",image:"<img src='seattle.jpg'>",description:"This place is awesome!"},
-    {location:"Oakland, California",image:"<img src='oakland.jpg'>",description:"This place is awesome!"},
-    {location:"Milan, Italy",image:"<img src='milan.jpg'>",description:"This place is awesome!"},
-    {location:"Tokyo, Japan",image:"<img src='tokyo.jpg'>",description:"This place is awesome!"},
+    {location:"New York, NY", image:"<img id='img' src='newyork.jpg'>",description:"This place is awesome!"},
+    {location:"Chicago, IL",image:"<img id='img' src='chicago.jpg'>",description:"This place is awesome!"},
+    {location:"Portland, Oregon",image:"<img id='img' src='portland.jpg'>",description:"This place is awesome!"},
+    {location:"Banff, Alberta",image:"<img id='img' src='banff-75x75.jpg'>",description:"This place is awesome!"},
+    {location:"Seattle, Washington",image:"<img id='img' src='seattle.jpg'>",description:"This place is awesome!"},
+    {location:"Oakland, California",image:"<img id='img' src='oakland.jpg'>",description:"This place is awesome!"},
+    {location:"Milan, Italy",image:"<img id='img' src='milan.jpg'>",description:"This place is awesome!"},
+    {location:"Tokyo, Japan",image:"<img id='img' src='tokyo.jpg'>",description:"This place is awesome!"},
 ];
 
 const placeStringBuilder = (array) => {
