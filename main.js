@@ -20,8 +20,9 @@ const placeStringBuilder = (array) => {
         domString += `<h2>${array[i].location}</h2>`;
         domString += `<div class="img">${array[i].image}</div>`;
         domString += `<p>${array[i].description}</p>`;
-        domString += `<textarea name="" id="" cols="30" rows="10"></textarea><br>` 
-        domString += `<button class="card-button">Post</button>`;
+        domString += `<textarea name="" id="input" cols="30" rows="10"></textarea>`
+        domString += `<br>` 
+        domString += `<button class="post">Post</button>`;
         domString += `</div>`;
         console.log(domString);
 }
@@ -29,7 +30,7 @@ printToDom(domString,"main");
 };
 
 const addAllEventListeners = () => {
-    const allTheButtons = document.getElementsByClassName('card-button');
+    const allTheButtons = document.getElementsByClassName('post');
 
     for (let i = 0; i < allTheButtons.length; i++) {
         allTheButtons[i].addEventListener('click', postToDom);
@@ -37,8 +38,9 @@ const addAllEventListeners = () => {
 };
 
 const postToDom = (e) => {
-    const nameOfStudent = e.target.parentNode.children[0];
-    nameOfStudent.classList.add('green');
+    const diarypost= e.target.parentNode.childNodes[3].value;
+    console.log(diarypost);
+    
 };
 
 const startApplication = () =>{

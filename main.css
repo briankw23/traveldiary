@@ -1,16 +1,12 @@
-.card{
+#card{
     border: 2px solid black;
     text-align: center;
     margin: 1%;
     padding: 2%;
-    width: 30;
     background: lightslategray;
 }
 .main{
     display: block;
     flex-wrap: wrap;
     justify-content: center;
-}
-.img{
-    
 }
