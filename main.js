@@ -44,9 +44,14 @@ const postToDom = (e) => {
     console.log(posttarget);
     const timestamp = new Date();
     diaString = "";
-    diaString += `${locationtarget}`;
-    diaString += `${posttarget}`;
-    diaString += `${timestamp.getMonth()+1}-${timestamp.getDate()}-${timestamp.getFullYear()}`;
+    diaString = `<div class="d-card">`;
+    diaString += `<h3>${locationtarget}<h/3>`;
+    diaString +=`<br>`;
+    diaString += `<p>${posttarget}</p>`;
+    diaString +=`<br>`;
+    diaString += `<p>${timestamp.getMonth()+1}-${timestamp.getDate()}-${timestamp.getFullYear()}</p>`;
+    diaString += `<p>${timestamp.getHours()}:${timestamp.getMinutes()}:${timestamp.getSeconds()}</p>`;
+    diaString += `</div>`;
     console.log(diaString);
     printToDom(diaString,"diary");
 };

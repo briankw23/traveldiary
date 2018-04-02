@@ -4,9 +4,23 @@
     margin: 1%;
     padding: 2%;
     background: lightslategray;
+    width: 400px;
 }
-.main{
-    display: block;
+#main{
     flex-wrap: wrap;
     justify-content: center;
+    display: flex;
+}
+.d-card{
+    background-color: gray;
+    border: 2px solid black;
+}
+.diary{
+    margin: 5%;
+    padding: 2%;
+}
+.img{
+display: block;
+max-width: 50%;
+max-height: 50%;
 }
