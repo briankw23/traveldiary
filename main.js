@@ -38,9 +38,17 @@ const addAllEventListeners = () => {
 };
 
 const postToDom = (e) => {
-    const diarypost= e.target.parentNode.childNodes[3].value;
-    console.log(diarypost);
-    
+    const locationtarget= e.target.parentNode.childNodes[0].innerHTML;
+    console.log(locationtarget);
+    const posttarget= e.target.parentNode.childNodes[3].value;
+    console.log(posttarget);
+    const timestamp = new Date();
+    diaString = "";
+    diaString += `${locationtarget}`;
+    diaString += `${posttarget}`;
+    diaString += `${timestamp.getMonth()+1}-${timestamp.getDate()}-${timestamp.getFullYear()}`;
+    console.log(diaString);
+    printToDom(diaString,"diary");
 };
 
 const startApplication = () =>{
