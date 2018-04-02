@@ -40,7 +40,7 @@ const addAllEventListeners = () => {
 const postToDom = (e) => {
     const locationtarget= e.target.parentNode.childNodes[0].innerHTML;
     console.log(locationtarget);
-    const posttarget= e.target.parentNode.childNodes[3].value;
+    let posttarget= e.target.parentNode.childNodes[3].value;
     console.log(posttarget);
     const timestamp = new Date();
     diaString = "";
@@ -54,6 +54,7 @@ const postToDom = (e) => {
     diaString += `</div>`;
     console.log(diaString);
     printToDom(diaString,"diary");
+    posttarget= e.target.parentNode.childNodes[3].value = "";
 };
 
 const startApplication = () =>{
